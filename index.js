@@ -41,6 +41,10 @@ app.use("/api/messages", messageRoutes);
 //     });
 // }
 
+app.get("/", (req, res) => {
+  res.send("Backend is running!");
+});
+
 server.listen(PORT, () => {
   console.log("Server is running on PORT: " + PORT);
   connectDB();
