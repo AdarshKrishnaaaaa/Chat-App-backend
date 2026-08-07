@@ -42,7 +42,10 @@ app.use("/api/messages", messageRoutes);
 // }
 
 app.get("/", (req, res) => {
-  res.send("Backend is running!");
+  res.status(200).json({
+    success: true,
+    message: "Chat App Backend is running 🚀",
+  });
 });
 
 server.listen(PORT, () => {
