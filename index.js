@@ -24,7 +24,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://chat-app-frontend-umber-sigma.vercel.app",
+      "https://helloworld-chat.vercel.app",
     ],
     credentials: true,
   }),
